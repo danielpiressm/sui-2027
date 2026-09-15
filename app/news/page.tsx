@@ -1,0 +1,2 @@
+import { news } from "@/lib/content";
+export default function News() { return <div className="page"><div className="container"><p className="kicker">Updates</p><h1>News & announcements</h1><div className="news-grid">{news.map(n=><article className="news-card" key={n.title}><span>{n.date}</span><h3>{n.title}</h3><p>{n.text}</p></article>)}</div></div></div> }
