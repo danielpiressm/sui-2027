@@ -1,5 +1,6 @@
 const groups: Array<[string, string[]]> = [
-  ["General Chair", ["Daniel Medeiros"]],
+  ["General Chair", ["Huyen Nguyen - Universite Paris Saclay, France"]],
+  ["General Chair", ["Daniel Medeiros - Telecom Paris, France"]]
   ["Program Chairs", ["To be announced"]],
   ["Web Chair", ["To be announced"]],
   ["Publicity Chair", ["To be announced"]],
