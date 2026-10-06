@@ -1,9 +1,41 @@
-const groups: Array<[string, string[]]> = [
-  ["General Chair", ["Huyen Nguyen - Universite Paris Saclay, France"]],
-  ["General Chair", ["Daniel Medeiros - Telecom Paris, France"]],
-  ["Program Chairs", ["To be announced"]],
-  ["Web Chair", ["To be announced"]],
-  ["Publicity Chair", ["To be announced"]],
+import Image from "next/image";
+
+const organizerGroups = [
+  {
+    role: "General Chair",
+    people: [
+      {
+        name: "Huyen Nguyen",
+        institution: "Université Paris Saclay",
+        photo: "/organizers/huyen.png",
+      },
+	  {
+        name: "Daniel Medeiros",
+        institution: "Télécom Paris, Institut Polytechnique de Paris",
+        photo: "/organizers/daniel.jpeg",
+      },
+    ],
+  },
+  {
+    role: "Program Chairs",
+    people: [
+      {
+        name: "Xubo Wang",
+        institution: "University of Example",
+        photo: "/organizers/xubo.jpg",
+      },
+   ],
+  },
+  {
+    role: "Web Chair",
+    people: [
+      {
+        name: "Organizer 3",
+        institution: "University of Example",
+        photo: "/organizers/organizer3.jpg",
+      },
+    ],
+  },
 ];
 
 export default function Organizers() {
@@ -13,23 +45,39 @@ export default function Organizers() {
         <p className="kicker">The team</p>
         <h1>Organizers</h1>
 
-        <div className="organizer-grid">
-          {groups.map(([role, names]) => (
-            <section className="org-card" key={role}>
-              <span>{role}</span>
+        <div className="organizer-groups">
+          {organizerGroups.map((group) => (
+            <section className="organizer-group" key={group.role}>
+              <h2 className="organizer-role">{group.role}</h2>
 
-              {names.map((name) => (
-                <h2 key={name}>{name}</h2>
-              ))}
+              <div className="organizer-people">
+                {group.people.map((person) => (
+                  <div className="organizer-person" key={person.name}>
+                    <Image
+                      src={person.photo}
+                      alt={person.name}
+                      width={180}
+                      height={180}
+                      className="organizer-photo"
+                    />
+
+                    <h3>{person.name}</h3>
+
+                    <p className="organizer-institution">
+                      {person.institution}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </section>
           ))}
         </div>
 
         <p className="small-note">
-          Replace the placeholders with the final organizing committee as
-          appointments are confirmed.
+          The organizing committee will be updated as appointments are confirmed.
         </p>
       </div>
     </div>
   );
 }
+```
