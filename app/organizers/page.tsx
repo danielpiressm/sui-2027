@@ -26,16 +26,6 @@ const organizerGroups = [
       },
    ],
   },
-  {
-    role: "Web Chair",
-    people: [
-      {
-        name: "Organizer 3",
-        institution: "University of Example",
-        photo: "/organizers/organizer3.jpg",
-      },
-    ],
-  },
 ];
 
 export default function Organizers() {
