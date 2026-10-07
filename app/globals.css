@@ -39,6 +39,10 @@ a {
   max-width: 900px;
 }
 
+/* =========================
+   HEADER
+========================= */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -90,6 +94,10 @@ a {
   border: 0;
 }
 
+/* =========================
+   HERO
+========================= */
+
 .hero {
   min-height: 690px;
   position: relative;
@@ -100,7 +108,8 @@ a {
 .hero-grid {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.07) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: linear-gradient(to bottom, black, transparent);
@@ -200,6 +209,10 @@ a {
   bottom: -160px;
 }
 
+/* =========================
+   SECTIONS
+========================= */
+
 .section {
   padding: 110px 0;
 }
@@ -245,6 +258,10 @@ a {
   margin-top: 18px;
 }
 
+/* =========================
+   ANNOUNCEMENT
+========================= */
+
 .announcement-inner {
   display: flex;
   justify-content: space-between;
@@ -257,6 +274,10 @@ a {
   line-height: 1;
   margin: 0 0 10px;
 }
+
+/* =========================
+   NEWS
+========================= */
 
 .section-heading {
   display: flex;
@@ -311,6 +332,10 @@ a {
   gap: 6px;
 }
 
+/* =========================
+   IMPORTANT DATES
+========================= */
+
 .dates-band {
   background: var(--dark);
   color: white;
@@ -354,6 +379,10 @@ a {
   margin: 18px 0 10px;
 }
 
+/* =========================
+   PARIS SECTION
+========================= */
+
 .paris-section {
   height: 500px;
   background: #111;
@@ -361,7 +390,8 @@ a {
 
 .paris-image {
   height: 100%;
-  background: radial-gradient(circle at 70% 35%, #aaa 0 1px, transparent 2px),
+  background:
+    radial-gradient(circle at 70% 35%, #aaa 0 1px, transparent 2px),
     linear-gradient(135deg, #292929, #111 65%);
   background-size: 22px 22px, auto;
   display: flex;
@@ -379,6 +409,10 @@ a {
   line-height: 0.95;
   margin: 0 0 25px;
 }
+
+/* =========================
+   GENERAL PAGES
+========================= */
 
 .page {
   padding: 110px 0 130px;
@@ -412,6 +446,10 @@ a {
   max-width: 800px !important;
 }
 
+/* =========================
+   TOPICS
+========================= */
+
 .topic-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -425,12 +463,20 @@ a {
   padding: 14px 0;
 }
 
+/* =========================
+   NOTICE
+========================= */
+
 .notice {
   padding: 25px 30px;
   background: #e8ff55;
   margin-bottom: 45px;
   border-left: 5px solid var(--dark);
 }
+
+/* =========================
+   TIMELINE
+========================= */
 
 .timeline {
   border-top: 1px solid var(--line);
@@ -469,6 +515,10 @@ a {
   color: var(--muted);
 }
 
+/* =========================
+   PROGRAM
+========================= */
+
 .program-day {
   margin-top: 60px;
 }
@@ -488,6 +538,10 @@ a {
   margin: 4px 0;
   color: var(--muted);
 }
+
+/* =========================
+   VENUE
+========================= */
 
 .venue-placeholder {
   height: 400px;
@@ -519,25 +573,69 @@ a {
   margin-top: 10px;
 }
 
+/* =========================
+   ORGANIZERS
+========================= */
 
-.org-card {
-  background: white;
-  border: 1px solid var(--line);
-  padding: 30px;
-  min-height: 180px;
+.organizer-groups {
+  width: 100%;
+  margin-top: 48px;
 }
 
-.org-card h2 {
+.organizer-group {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.organizer-role {
   font-size: 28px;
-  line-height: 1;
-  margin: 25px 0 0;
-  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0 0 30px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.organizer-people {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.organizer-person {
+  width: 180px;
+  flex: 0 0 180px;
+}
+
+.organizer-photo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.organizer-person h3 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.organizer-institution {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .small-note {
   color: #777;
   margin-top: 25px;
 }
+
+/* =========================
+   REGISTRATION / PRICES
+========================= */
 
 .price-grid {
   display: grid;
@@ -561,6 +659,10 @@ a {
   display: block;
   margin-top: 25px;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   background: #111;
@@ -607,6 +709,10 @@ footer {
   font-size: 11px;
 }
 
+/* =========================
+   TABLET / MOBILE
+========================= */
+
 @media (max-width: 800px) {
   .container {
     width: min(100% - 32px, var(--max));
@@ -637,6 +743,8 @@ footer {
     display: flex;
   }
 
+  /* HERO */
+
   .hero {
     min-height: 650px;
   }
@@ -655,6 +763,8 @@ footer {
     align-items: flex-start;
   }
 
+  /* GENERAL GRIDS */
+
   .two-col,
   .news-grid,
   .dates-grid,
@@ -667,15 +777,21 @@ footer {
     padding: 75px 0;
   }
 
+  /* ANNOUNCEMENT / SECTION HEADINGS */
+
   .announcement-inner,
   .section-heading {
     align-items: flex-start;
     flex-direction: column;
   }
 
+  /* TOPICS */
+
   .topic-list {
     grid-template-columns: 1fr;
   }
+
+  /* PAGES */
 
   .page {
     padding: 75px 0 90px;
@@ -686,6 +802,8 @@ footer {
     margin-bottom: 50px;
   }
 
+  /* PARIS */
+
   .paris-overlay {
     padding: 45px 16px;
   }
@@ -694,71 +812,32 @@ footer {
     font-size: 45px;
   }
 
+  /* FOOTER */
+
   .footer-bottom {
     flex-direction: column;
     gap: 10px;
   }
 
+  /* PROGRAM */
+
   .program-row {
     grid-template-columns: 65px 1fr;
   }
-  
-  /* Organizers */
-.organizer-groups {
-  width: 100%;
-  margin-top: 48px;
-}
 
-.organizer-group {
-  width: 100%;
-  margin-bottom: 70px;
-}
+  /* ORGANIZERS */
 
-.organizer-role {
-  font-size: 28px;
-  line-height: 1.1;
-  margin: 0 0 30px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--line);
-}
+  .organizer-people {
+    gap: 30px;
+  }
 
-.organizer-people {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 50px;
-}
+  .organizer-person {
+    width: 150px;
+    flex: 0 0 150px;
+  }
 
-.organizer-person {
-  width: 180px;
-  flex: 0 0 180px;
-}
-
-.organizer-photo {
-  display: block;
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-}
-
-.organizer-person h3 {
-  margin: 15px 0 5px;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.organizer-institution {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.small-note {
-  color: #777;
-  margin-top: 25px;
-}
-  
-  
-  
+  .organizer-photo {
+    width: 150px;
+    height: 150px;
+  }
 }
