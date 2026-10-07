@@ -22,7 +22,7 @@ export function SiteHeader() {
       <div className="container nav">
         <Link className="brand" href="/">
           <img
-            src="/images/sui-logo.jpeg"
+            src="/sui-logo.jpeg"
             alt="ACM SUI 2027"
             className="site-logo"
           />
