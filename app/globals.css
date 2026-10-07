@@ -61,9 +61,16 @@ a {
 }
 
 .brand {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.05em;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.site-logo {
+  display: block;
+  width: auto;
+  height: 48px;
+  object-fit: contain;
 }
 
 .brand span {
@@ -720,6 +727,9 @@ footer {
 
   .nav {
     min-height: 64px;
+  }
+  .site-logo {
+	height: 40px;
   }
 
   .menu-btn {
