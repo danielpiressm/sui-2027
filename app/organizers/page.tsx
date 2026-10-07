@@ -6,12 +6,12 @@ const organizerGroups = [
     people: [
       {
         name: "Huyen Nguyen",
-        institution: "Université Paris Saclay",
+        institution: "Université Paris Saclay, France",
         photo: "/organizers/huyen.png",
       },
 	  {
         name: "Daniel Medeiros",
-        institution: "Télécom Paris, Institut Polytechnique de Paris",
+        institution: "Télécom Paris, Institut Polytechnique de Paris, France",
         photo: "/organizers/daniel.jpeg",
       },
     ],
@@ -21,8 +21,18 @@ const organizerGroups = [
     people: [
       {
         name: "Xubo Wang",
-        institution: "University of Example",
+        institution: "Shanghai Jiaotong University, China",
         photo: "/organizers/xubo.jpg",
+      },
+	  {
+        name: "Susanne Schmidt",
+        institution: "Canterbury University, New Zealand",
+        photo: "/organizers/susanne.jpeg",
+      },
+	  {
+        name: "Alvaro Quevedo",
+        institution: "Ontario Tech University, Canada",
+        photo: "/organizers/alvaro.jpg",
       },
    ],
   },

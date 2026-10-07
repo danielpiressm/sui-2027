@@ -710,7 +710,6 @@ footer {
   }
   
   /* Organizers */
-
 .organizer-groups {
   margin-top: 48px;
 }
@@ -721,19 +720,22 @@ footer {
 
 .organizer-role {
   font-size: 1.5rem;
-  margin-bottom: 28px;
-  border-bottom: 1px solid #ddd;
+  margin: 0 0 28px;
+  border-bottom: 1px solid var(--line);
   padding-bottom: 12px;
 }
 
 .organizer-people {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 48px;
 }
 
 .organizer-person {
   width: 180px;
+  flex: 0 0 180px;
 }
 
 .organizer-photo {
@@ -753,25 +755,13 @@ footer {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.4;
-  opacity: 0.65;
+  color: var(--muted);
 }
 
-@media (max-width: 700px) {
-  .organizer-people {
-    gap: 30px;
-  }
-
-  .organizer-person {
-    width: 140px;
-  }
-
-  .organizer-photo {
-    width: 140px;
-    height: 140px;
-  }
+.small-note {
+  color: #777;
+  margin-top: 25px;
 }
-  
-  
   
   
   
