@@ -519,11 +519,6 @@ a {
   margin-top: 10px;
 }
 
-.organizer-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
 
 .org-card {
   background: white;
